@@ -23,6 +23,9 @@ namespace GNominasV3_ProtecciónDatos
         // Constante para el calculo del salario extra
         const float INCR_EXTRA = 1.5f;
 
+        // Constante para los Impuestos
+        const float PORCENTAJE_IMP = 0.16f;
+
         // MIEMBROS - CAMPOS - ATRIBUTOS (Son Sinónimos)
         /* Cuando definimos los miembros dentro de una clase, 
          * siempre son privados por defecto.
@@ -38,9 +41,9 @@ namespace GNominasV3_ProtecciónDatos
         private int _horasExtra;    // Protección: NO permitir establecer ningún valor externo
         private float _salarioBase;
         private float _salarioExtra;
-        public float salarioBruto;
-        public float impuestos;
-        public float salrioNeto;
+        public float _salarioBruto;
+        public float _impuestos;
+        public float _salrioNeto;
 
         // PROPIEDADES
         /// <summary>
@@ -92,7 +95,6 @@ namespace GNominasV3_ProtecciónDatos
             }
         }
 
-
         /// <summary>
         /// 
         /// </summary>
@@ -107,7 +109,7 @@ namespace GNominasV3_ProtecciónDatos
             }
         }
 
-        // MÉTODOS PÚBLICOS
+        #region MÉTODOS PÚBLICOS
 
         /// <summary>
         /// 
@@ -145,6 +147,9 @@ namespace GNominasV3_ProtecciónDatos
             else _salarioBase = HorasTrabajadas * SalarioHora;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public float SalarioExtra
         {
             get
@@ -154,10 +159,66 @@ namespace GNominasV3_ProtecciónDatos
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void CalcularSalarioExtra()
         {
             _salarioExtra = HorasExtra * SalarioHora * INCR_EXTRA;
-            Math.Round(_salarioExtra, 2);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public float SalarioBruto
+        {
+            get
+            {
+                CalcularSalarioBruto();
+                return _salarioBruto;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void CalcularSalarioBruto()
+        {
+            _salarioBruto = SalarioBase + SalarioExtra;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public float Impuestos
+        {
+            get
+            {
+                CalcularImpuestos();
+                return _impuestos;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void CalcularImpuestos()
+        {
+            _impuestos = SalarioBruto * PORCENTAJE_IMP;
+        }
+
+        public float SalarioNeto
+        {
+            get
+            {
+                return _salrioNeto;
+            }
+        }
+
+        private void CalcularSalarioNeto() 
+        {
+            _salrioNeto = SalarioBruto - Impuestos;
+        }
+        #endregion
     }
 }

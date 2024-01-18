@@ -39,10 +39,10 @@ namespace GNominasV3_ProtecciónDatos
             Console.WriteLine($"\tHoras Extra: {nomEmplead.HorasExtra}");
             Console.WriteLine($"\tSalario Base: {nomEmplead.SalarioBase}");
             Console.WriteLine($"\tSalario Extra: {nomEmplead.SalarioExtra}");
-            Console.WriteLine($"\tSalario Bruto: {nomEmplead.salarioBruto}");
+            Console.WriteLine($"\tSalario Bruto: {nomEmplead.SalarioBruto}");
             LineaDecorativa();
-            Console.WriteLine($"\tImpuestos: {nomEmplead.impuestos}");
-            Console.WriteLine($"\tSalario Neto: {nomEmplead.salrioNeto}");
+            Console.WriteLine($"\tImpuestos: {nomEmplead.Impuestos}");
+            Console.WriteLine($"\tSalario Neto: {nomEmplead.SalarioNeto}");
             LineaDecorativa();
 
         }

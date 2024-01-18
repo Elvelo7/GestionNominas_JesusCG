@@ -82,7 +82,7 @@ namespace GNominasV3_ProtecciónDatos
             Interfaz.MostrarLinea();
             Interfaz.MostrarHonorarios(nominaEmpleado.SalarioBase, nominaEmpleado.SalarioExtra);
             Interfaz.MostrarLinea();
-            //Interfaz.MostrarNomina(salarioBruto, impuestos, salarioNeto);
+            Interfaz.MostrarNomina(nominaEmpleado.SalarioBruto, nominaEmpleado.Impuestos, nominaEmpleado.SalarioNeto);
 
         }
     }

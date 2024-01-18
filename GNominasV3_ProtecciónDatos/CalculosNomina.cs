@@ -33,16 +33,16 @@ namespace GNominasV3_ProtecciónDatos
         /// </summary>
         /// <param name="salarioBruto"></param>
         /// <returns></returns>
-        public static float CalculoImpuestos(float salarioBruto)
-        {
-            // CONSTANTES
-            const float PORCENTAJE_IMP = 0.16f;
+        //public static float CalculoImpuestos(float salarioBruto)
+        //{
+        //    // CONSTANTES
+        //    const float PORCENTAJE_IMP = 0.16f;
 
-            // RECURSOS LOCALES
-            // PROCESO
-            // SALIDA - Método
-            return salarioBruto * PORCENTAJE_IMP;
-        }
+        //    // RECURSOS LOCALES
+        //    // PROCESO
+        //    // SALIDA - Método
+        //    return salarioBruto * PORCENTAJE_IMP;
+        //}
 
         /// <summary>
         /// Calculo Salario sin horas extra
@@ -73,14 +73,14 @@ namespace GNominasV3_ProtecciónDatos
         /// <param name="salarioBase"></param>
         /// <param name="salarioExtra"></param>
         /// <returns></returns>
-        public static float CalculoSalarioBruto(float salarioBase, float salarioExtra)
-        {
-            // CONSTANTES
-            // RECURSOS LOCALES
-            // PROCESO
-            // SALIDA - Método
-            return salarioBase + salarioExtra;
-        }
+        //public static float CalculoSalarioBruto(float salarioBase, float salarioExtra)
+        //{
+        //    // CONSTANTES
+        //    // RECURSOS LOCALES
+        //    // PROCESO
+        //    // SALIDA - Método
+        //    return salarioBase + salarioExtra;
+        //}
 
         /// <summary>
         /// Calulo de salario de las horas extra
