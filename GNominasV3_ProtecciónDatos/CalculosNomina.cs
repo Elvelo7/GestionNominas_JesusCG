@@ -106,14 +106,14 @@ namespace GNominasV3_ProtecciónDatos
         /// <param name="salarioBrut"></param>
         /// <param name="impuest"></param>
         /// <returns></returns>
-        public static float CalculoSalarioNeto(float salarioBrut, float impuest)
-        {
-            // CONSTANTES
-            // RECURSOS LOCALES
-            // PROCESO
-            // SALIDA - Método
-            return salarioBrut - impuest;
-        }
+        //public static float CalculoSalarioNeto(float salarioBrut, float impuest)
+        //{
+        //    // CONSTANTES
+        //    // RECURSOS LOCALES
+        //    // PROCESO
+        //    // SALIDA - Método
+        //    return salarioBrut - impuest;
+        //}
 
     }
 }
