@@ -91,6 +91,8 @@ namespace GNominasV3_ProtecciónDatos
                 _salarioHora = value;
             }
         }
+
+
         /// <summary>
         /// 
         /// </summary>

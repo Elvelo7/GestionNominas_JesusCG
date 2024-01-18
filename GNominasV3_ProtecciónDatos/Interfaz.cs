@@ -120,8 +120,68 @@ namespace GNominasV3_ProtecciónDatos
 
         public static void LineaDecorativa()
         {
-            Console.WriteLine("*******************************************");
+            Console.WriteLine("*********************************************");
             
         }
+
+        #region MÉTODOS DE SALIDA DE DATOS
+
+        /// <summary>
+        /// Muestra una línea de asteriscos
+        /// </summary>
+        public static void MostrarLinea()
+        {
+            Console.WriteLine("***********************************************************************");
+        }
+
+        /// <summary>
+        /// Muestra los datos del empleado
+        /// </summary>
+        /// <param name="name">Nombre del Empleado</param>
+        /// <param name="surname">Apellidos del Empleado</param>
+        /// <param name="job">Puesto de Trabajo</param>
+        public static void MostrarEmpleado(string name, string surname, string job)
+        {
+            Console.WriteLine($"Puesto:\t{job}");
+            Console.WriteLine($"Nombre:\t{name}\tApellidos:\t{surname}");
+        }
+
+        /// <summary>
+        /// Muestra los datos del trabajo realizado en la semana por el empleado
+        /// </summary>
+        /// <param name="horasT">Horas Trabajadas</param>
+        /// <param name="horasE">Horas Extra</param>
+        /// <param name="salarioH">Salario por Hora de Trabajo</param>
+        public static void MostrarDatosSemana(int horasT, int horasE, float salarioH)
+        {
+            Console.WriteLine($"\tHoras Trabajadas:\t{horasT} Horas\tHoras Extra:\t{horasE} Horas");
+            Console.WriteLine($"\tPrecio por Hora:\t{salarioH} Euros/Hora");
+        }
+
+        /// <summary>
+        /// Muestra los Honorarios del Empleado
+        /// </summary>
+        /// <param name="sBase">Salario Base</param>
+        /// <param name="sExtra">Salario Extra</param>
+        public static void MostrarHonorarios(float sBase, float sExtra)
+        {
+            Console.WriteLine($"\tSalario Base:\t{sBase} Euros\tSalario Extra:\t{sExtra} Euros");
+        }
+
+        /// <summary>
+        /// Muestra la Nómina del Empleado
+        /// </summary>
+        /// <param name="sBruto">Salario Bruto</param>
+        /// <param name="tasas">Impuestos</param>
+        /// <param name="sNeto">Salario Neto</param>
+        public static void MostrarNomina(float sBruto, float tasas, float sNeto)
+        {
+            Console.WriteLine($"\tSalario Bruto:\t{sBruto} Euros");
+            Console.WriteLine($"\tImpuestos:\t{tasas} Euros");
+            Console.WriteLine($"\tSalario Neto:\t{sNeto}  Euros");
+        }
+
+        #endregion
+
     }
 }

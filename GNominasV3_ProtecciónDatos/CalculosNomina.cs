@@ -89,16 +89,16 @@ namespace GNominasV3_ProtecciónDatos
         /// <param name="salarioHora"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public static float CalculoSalarioExtra(int horasExtra, float salarioHora)
-        {
-            // CONSTANTES
-            const float INCR_EXTRA = 1.5f;
+        //public static float CalculoSalarioExtra(int horasExtra, float salarioHora)
+        //{
+        //    // CONSTANTES
+        //    const float INCR_EXTRA = 1.5f;
 
-            // RECURSOS LOCALES
-            // PROCESO
-            // SALIDA - Método
-            return horasExtra * salarioHora * INCR_EXTRA;
-        }
+        //    // RECURSOS LOCALES
+        //    // PROCESO
+        //    // SALIDA - Método
+        //    return horasExtra * salarioHora * INCR_EXTRA;
+        //}
 
         /// <summary>
         /// Salario Neto
